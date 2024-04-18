@@ -125,7 +125,7 @@
 }
 
 .introbtn:hover {
-    color: rgb(40, 140, 200);
+    color: rgb(240, 240, 240);
 }
 
 .spanname {
@@ -155,17 +155,6 @@ section .bg-color {
     background-color: white;
     z-index: 1;
 }
-
-.reveal {
-    opacity: 0; /* Initially hide the element */
-    transform: translateY(20px); /* Move the element down slightly */
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
-  }
-
-.reveal.revealed {
-    opacity: 1; /* Make the element visible */
-    transform: translateY(0); /* Move the element back to its original position */
-  }
 
 .cardtitle {
     font-size: 60px;
@@ -203,8 +192,12 @@ section .contact{
     font-size: 20px;
     background: rgba(36,36,36,0.05);
     padding: 30px 30px;
-    height: 600px;  
+    height: 700px;  
     width: 100%;
+}
+
+.contactfrm {
+    margin-bottom: 50px;
 }
 
 .cont-desc {
@@ -265,17 +258,47 @@ section .contact{
     padding: 10px;
 }
 
+.submitbtn {
+    position: absolute;
+    margin: 10px;
+    border: 2px solid rgb(40, 140, 200);
+    border-radius: 5px;
+    right: 140px;
+    padding: 5px;
+    width: 100px;
+    font-size: 22px;
+    transition: 0.2s ease-in;
+}
+
+.submitbtn:hover {
+    background-color: rgb(36, 36, 36);
+    border: 2px solid rgb(36, 36, 36);
+    color: rgb(240, 240, 240);
+}
+
 /* Lower Description */
 .low-desc {
-    position: relative;
+    position: absolute;
     background-color: rgba(40, 140, 200, 0.8);
     align-items: center;
     justify-content: center;
     text-align: center;
     user-select: none;
     padding: 10px;
+    width: 100%;
 }
 
+/* SCRIPT REVEAL */
+.reveal {
+    opacity: 0; /* Initially hide the element */
+    transform: translateY(20px); /* Move the element down slightly */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+  }
+
+.reveal.revealed {
+    opacity: 1; /* Make the element visible */
+    transform: translateY(0); /* Move the element back to its original position */
+  }
 
 /* SMALL SCREENS */
 @media (max-width: 992px) {
@@ -554,5 +577,14 @@ section .contact{
 
     .row-up {
         margin-bottom: 20px;
+    }
+
+    .submitbtn {
+        position: absolute;
+        margin: 10px;
+        right: 90px;
+        padding: 5px;
+        width: 100px;
+        font-size: 18px;
     }
 }
