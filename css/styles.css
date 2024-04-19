@@ -27,18 +27,31 @@
 }
 
 .navbar a {
+    position: relative;
     color: rgb(36, 36, 36);
     text-decoration: none;
     font-size: 20px;
     margin-left: 2rem;
     transition: 500ms;
-
 }
 
-.navbar a:active,
-.navbar a:focus,
 .navbar a:hover {
     color: rgba(40, 140, 200);
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(40, 140, 200);
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
 }
 
 .icons {
@@ -69,7 +82,7 @@
 
 .img {
     border: 2px solid black;
-    border-radius: 90px;
+    border-radius: 300px;
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);;
     width: 30rem;
     margin-bottom: 50px;
@@ -99,7 +112,9 @@
 }
 
 .introbtn {
-    border: 2px solid rgb(40, 140, 200);
+    border: 2px solid rgb(36, 36, 36);
+    color: rgb(36, 36, 36);
+    text-decoration: none;
     background-color: transparent;
     overflow: hidden;
     border-radius: 5px;
@@ -107,26 +122,16 @@
     position: relative;
     font-size: 22px;
     margin-right: 10px;
-    transition: 0.5s ease-out;
+    transition: 0.5s ease;
 }
 
 
 .introbtn:hover {
-    box-shadow: inset 300px 0 0 0 rgb(36,36,36);
-    border: 2px solid rgb(36,36,36);
-    transition: ease-out 0.3s;
+    box-shadow: inset 200px 0 rgb(40, 140, 200);
+    border: 2px solid rgb(40, 140, 200);
+    color: rgb(240, 240, 240);
     cursor: pointer;
 } 
-
-.introbtn{
-    color: rgb(36, 36, 36);
-    text-decoration: none;
-    transition: 400ms ease;
-}
-
-.introbtn:hover {
-    color: rgb(240, 240, 240);
-}
 
 .spanname {
     color: rgb(40, 140, 200);
@@ -261,19 +266,21 @@ section .contact{
 .submitbtn {
     position: absolute;
     margin: 10px;
-    border: 2px solid rgb(40, 140, 200);
+    color: rgb(36, 36, 36);
+    border: 2px solid rgb(36, 36, 36);
     border-radius: 5px;
     right: 140px;
     padding: 5px;
     width: 100px;
     font-size: 22px;
-    transition: 0.2s ease-in;
+    transition: 0.5s ease;
 }
 
 .submitbtn:hover {
-    background-color: rgb(36, 36, 36);
-    border: 2px solid rgb(36, 36, 36);
+    box-shadow: inset 200px 0 rgb(40, 140, 200);
+    border: 2px solid rgb(40, 140, 200);
     color: rgb(240, 240, 240);
+    cursor: pointer;
 }
 
 /* Lower Description */
@@ -369,7 +376,7 @@ section .contact{
 
     .img {
         border: 2px solid black;
-        border-radius: 20px;
+        border-radius: 300px;
         box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);;
         width: 20rem;
         margin-bottom: 10px;
@@ -476,6 +483,21 @@ section .contact{
         transform: translateY(0);
         opacity: 1;
         transition-delay: calc(0.20s * var(--i));
+    }
+
+    .navbar a::after {
+        content: "";
+        position: absolute;
+        background-color: rgb(40, 140, 200);
+        height: 3px;
+        width: 0%;
+        left: 0;
+        bottom: -5px;
+        transition: 0.3s;
+    }
+    
+    .navbar a:hover::after {
+        width: 100%;
     }
 
     /* FRONT TEXTS */
