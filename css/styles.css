@@ -94,10 +94,6 @@
     align-items: center;
 }
 
-.allbtn a {
-    margin-left: 0px;
-}
-
 .iconlinks {
     font-size: 40px;
 }
@@ -117,8 +113,8 @@
     text-decoration: none;
     background-color: transparent;
     overflow: hidden;
-    border-radius: 5px;
-    padding: 5px;
+    border-radius: 2px;
+    padding: 3px;
     position: relative;
     font-size: 22px;
     margin-right: 10px;
@@ -162,10 +158,12 @@ section .bg-color {
 }
 
 .cardtitle {
-    font-size: 60px;
+    font-size: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
+    user-select: none;
 }
 
 section .cards {
@@ -175,6 +173,7 @@ section .cards {
 
 section .cards .text-cards {
     background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8));
+    box-shadow: 2px 2px 4px rgba(36, 36, 36, 0.3);
     color: white;
     margin: 10px;
     padding: 10px;
@@ -195,7 +194,8 @@ section .contact{
     align-items: center;
     margin: auto;
     font-size: 20px;
-    background: rgba(36,36,36,0.05);
+    background: rgba(36, 36, 36,0.05);
+    box-shadow: 2px 0px 4px rgba(36, 36, 36, 0.3);
     padding: 30px 30px;
     height: 700px;  
     width: 100%;
@@ -268,9 +268,9 @@ section .contact{
     margin: 10px;
     color: rgb(36, 36, 36);
     border: 2px solid rgb(36, 36, 36);
-    border-radius: 5px;
+    border-radius: 2px;
     right: 140px;
-    padding: 5px;
+    padding: 3px;
     width: 100px;
     font-size: 22px;
     transition: 0.5s ease;
@@ -287,12 +287,14 @@ section .contact{
 .low-desc {
     position: absolute;
     background-color: rgba(40, 140, 200, 0.8);
+    box-shadow: 2px 0px 4px rgba(36, 36, 36, 0.3);
     align-items: center;
     justify-content: center;
     text-align: center;
     user-select: none;
     padding: 10px;
     width: 100%;
+    height: 40px;
 }
 
 /* SCRIPT REVEAL */
