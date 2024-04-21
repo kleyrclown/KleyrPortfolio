@@ -106,9 +106,14 @@
     font-size: 40px;
 }
 
-.iconlinks a{
+.iconlinks a {
     text-decoration: none;
     color: black;
+    transition: 0.5s ease;
+}
+
+.iconlinks a:hover {
+    color: rgb(40, 140, 200);
 }
 
 .btnlinks {
@@ -159,28 +164,84 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 45vh;
+}
+
+.about::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(36, 36, 36);
+    height: 3px;
+    width: 20%;
+    left: 18vh;
+    top: 60px;
+    transition: 0.3s;
 }
 
 .aboutcont {
-    margin-top: 60vh;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
-    grid-gap: 20px;
+    grid-template-columns: 1.5fr 0fr 0fr; /* Two columns with equal width */
+    grid-gap: 10px;
+    width: auto;
 }
 
-.aboutdetail h1 {
+.aboutdetail table{
+    width: 500px;
+}
+
+.aboutdetail .detail {
+    font-weight: bold;
+}
+
+.aboutdetail table td{
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+
+.aboutdesc h1 {
     font-size: 40px;
+    margin-bottom: 50px;
+    user-select: none;
 }
 
-.aboutdetail p {
-    width: 400px;
+.aboutdesc p {
+    font-size: 20px;
+}
+
+.aboutdesc p {
+    width: 500px;
+}
+
+.aboutdetail p{
+    width: 500px;
+}
+
+/* TECH STACK */
+
+.techstack {
+    margin-top: 35vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.techlng {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+}
+
+.techcont h1 {
+    font-size: 40px;
 }
 
 
 /* MY WORKS */
 
 section .bg-color {
-    margin-top: 600px;
+    margin-top: 400px;
     margin-bottom: 100px;
     background-color: white;
     z-index: 1;
