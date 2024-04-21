@@ -16,7 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 100px;
+    padding: 5px 100px;
     z-index: 9999;
 }
 
@@ -68,25 +68,33 @@
 }
 
 /* Intro */
-.intro {
-    position: relative;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
+
+.introcont {
     text-align: center;
     align-items: center;
     justify-content: center;
-    user-select: none;
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25vh;
 }
 
-.img {
+.intro {
+    position: relative;
+    margin-top: 50px;
+    user-select: none;
+}
+
+.intro h1 {
+    font-size: 70px;
+}
+
+/* .img {
     border: 2px solid black;
     border-radius: 300px;
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);;
     width: 30rem;
     margin-bottom: 50px;
-}
+} */
 
 .allbtn {
     display: flex;
@@ -133,10 +141,6 @@
     color: rgb(40, 140, 200);
 }
 
-.intro h1 {
-    font-size: 50px;
-}
-
 .introdesc {
     font-size: 25px;
     width: 50rem;
@@ -147,6 +151,31 @@
     justify-content: center;
     text-align: center;
 }
+
+/* ABOUT */
+
+.about {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutcont {
+    margin-top: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+    grid-gap: 20px;
+}
+
+.aboutdetail h1 {
+    font-size: 40px;
+}
+
+.aboutdetail p {
+    width: 400px;
+}
+
 
 /* MY WORKS */
 
@@ -376,13 +405,13 @@ section .contact{
 
     /* FONT TEXTS */
 
-    .img {
+    /* .img {
         border: 2px solid black;
         border-radius: 300px;
         box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);;
         width: 20rem;
         margin-bottom: 10px;
-    }
+    } */
 
     .intro h1 {
         font-size: 40px;
@@ -411,7 +440,6 @@ section .contact{
 
     .cardtitle {
         font-size: 70px;
-        margin: 20px 100px;
     }
 
     section .cards .text-cards {
@@ -506,25 +534,26 @@ section .contact{
 
     .intro {
         position: relative;
-        margin-top: 80px;
+        margin-top: 10px;
     }
 
     .intro h1 {
         font-size: 25px;
-        margin-top: 50px;
     }
 
     .introdesc {
         font-size: 20px;
         width: 350px;
-        padding-bottom: 50px;
+        margin-bottom: 10px;
+        margin-top: 20px;
         display: flex;
         justify-content: center;
         text-align: center;
     }
 
     .introbtn {
-        border: 2px solid rgb(40, 140, 200);
+        border: 2px solid rgb(36, 36, 36);
+        color: rgb(36, 36, 36);
         border-radius: 5px;
         padding: 3px;
         width: 150px;
@@ -536,11 +565,11 @@ section .contact{
     }
 
     .iconlinks {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .btnlinks {
-        margin-left: 10px;
+        margin-left: 20px;
     }
 
     .btnlinks a {
@@ -558,7 +587,7 @@ section .contact{
     }
 
     .cardtitle {
-        font-size: 40px;
+        font-size: 35px;
     }
 
     section .cards .text-cards {
