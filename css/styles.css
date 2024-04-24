@@ -126,8 +126,8 @@
     text-decoration: none;
     background-color: transparent;
     overflow: hidden;
-    border-radius: 2px;
-    padding: 3px;
+    border-radius: 20px;
+    padding: 10px;
     position: relative;
     font-size: 22px;
     margin-right: 10px;
@@ -164,10 +164,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 45vh;
+    margin-top: 40vh;
     background-color: rgb(36, 36, 36, 0.05);
     box-shadow: 2px 0px 4px rgba(36, 36, 36, 0.3);
-    height: 100vh;
+    height: 80vh;
 }
 
 /* .about::after {
@@ -187,7 +187,7 @@
 }
 
 .aboutdesc h1 {
-    font-size: 40px;
+    font-size: 60px;
     margin-bottom: 20px;
     user-select: none;
 }
@@ -195,9 +195,11 @@
 .aboutdesc p {
     font-size: 20px;
     width: 600px;
+    line-height: 1.5;
 }
 
 .aboutdetail {
+    margin-left: 60px;
     width: 500px;
 }
 
@@ -256,7 +258,7 @@ section .cards .text-cards {
     margin: 10px;
     padding: 10px;
     width: 350px;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 section .cards .text-cards h1 {
@@ -346,7 +348,7 @@ section .contact{
     margin: 10px;
     color: rgb(36, 36, 36);
     border: 2px solid rgb(36, 36, 36);
-    border-radius: 2px;
+    border-radius: 20px;
     right: 140px;
     padding: 3px;
     width: 100px;
@@ -526,20 +528,18 @@ section .contact{
     }
 
     .aboutdetail {
+        margin-left: 0px;
         width: 500px;
-    }
-    
-    .aboutdetail td{
-        font-size: 20px;
-        padding: 5px 10px 10px;
-    }
-
-    .aboutdetail {
         margin-top: 100px;
         text-align: left;
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .aboutdetail td{
+        font-size: 20px;
+        padding: 5px 10px 10px;
     }
 
     .aboutdetail td {
@@ -728,6 +728,7 @@ section .contact{
     }
 
     .aboutdetail {
+        margin-left: 0px;
         width: 300px;
     }
     
