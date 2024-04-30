@@ -2,15 +2,13 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
 }   
 
 /* Navbar */
 .header {
-    background-color: rgba(36, 36, 36, 0.05);
-    box-shadow: 0 2px 4px rgba(36, 36, 36, 0.3);
     position: relative;
-    top: 0;
+    top: 20px;
     left: 0;
     width: 100%;
     display: flex;
@@ -129,14 +127,15 @@
     border-radius: 20px;
     padding: 10px;
     position: relative;
-    font-size: 22px;
+    font-size: 15px;
+    font-weight: bold;
     margin-right: 10px;
     transition: 0.5s ease;
 }
 
 
 .introbtn:hover {
-    box-shadow: inset 200px 0 rgb(40, 140, 200);
+    box-shadow: inset 220px 0 rgb(40, 140, 200);
     border: 2px solid rgb(40, 140, 200);
     color: rgb(240, 240, 240);
     cursor: pointer;
@@ -165,8 +164,6 @@
     justify-content: center;
     align-items: center;
     margin-top: 40vh;
-    background-color: rgb(36, 36, 36, 0.05);
-    box-shadow: 2px 0px 4px rgba(36, 36, 36, 0.3);
     height: 80vh;
 }
 
@@ -350,9 +347,10 @@ section .contact{
     border: 2px solid rgb(36, 36, 36);
     border-radius: 20px;
     right: 140px;
-    padding: 3px;
+    padding: 10px;
     width: 100px;
-    font-size: 22px;
+    font-size: 15px;
+    font-weight: bold;
     transition: 0.5s ease;
 }
 
@@ -479,6 +477,13 @@ section .contact{
         text-align: center;
     }
 
+    .introbtn {
+        font-weight: normal;
+        border-radius: 20px;
+        padding: 10px;
+        width: 220px;
+    }
+
     .allbtn {
         position: relative;
         display: table-row;
@@ -498,7 +503,6 @@ section .contact{
     /* ABOUT */
     .about {
         margin-top: 45vh;
-        background-color: rgb(36, 36, 36, 0.1);
         width: 100%;
     }
     
@@ -611,15 +615,17 @@ section .contact{
         position: absolute;
         top: 100%;
         left: 0;
-        width: 100%;
-        height: 0;
+        width: 0;
+        height: 15rem;
         background: white;
+        opacity: 0;
         overflow: hidden;
         transition: .3s ease;
     }
 
     #check:checked~.navbar {
-        height: 15rem;
+        width: 100%;
+        opacity: 100%;
     }
 
     .navbar a {
@@ -627,11 +633,11 @@ section .contact{
         display: block;
         text-align: center;
         margin: 1.3rem;
-        transform: translateY(-300px);
+        transform: translateX(-300px);
     }
 
     #check:checked~.navbar a {
-        transform: translateY(0);
+        transform: translateX(0);
         opacity: 1;
         transition-delay: calc(0.20s * var(--i));
     }
@@ -677,12 +683,12 @@ section .contact{
         color: rgb(36, 36, 36);
         border-radius: 5px;
         padding: 3px;
-        width: 200px;
+        width: 220px;
         position: relative;
         display: flex;
+        font-weight: normal;
         justify-content: center;
         align-items: center;
-        font-size: 18px;
         margin-top: 10px;
     }
 
@@ -706,7 +712,6 @@ section .contact{
 
     .about {
         margin-top: 45vh;
-        background-color: rgb(36, 36, 36, 0.1);
     }
 
     .aboutcont {

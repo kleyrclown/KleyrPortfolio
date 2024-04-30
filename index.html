@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
+        <!-- HEADER SECTION -->
         <header class="header">
             <h1 class="name">Portfolio</h1>
             <input type="checkbox" id="check">
@@ -22,6 +23,7 @@
                     <a href="#contact" style="--i:3;">Contact</a>
             </nav>
         </header>
+        <!-- FRONT SECTION -->
         <section class="introcont">
             <div class="intro">
                 <!-- <img class="img" src="css/PICS/Screenshot 2024-01-25 163415.png"> -->
@@ -41,7 +43,8 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <!-- ABOUT SECTION -->
+        <section class="about reveal">
             <div class="aboutcont">
                 <div class="aboutdesc">
                     <h1>ABOUT ME</h1>
@@ -59,7 +62,7 @@
                         </tr>
                         <tr>
                             <td class="dtlbold">Address:</td>
-                            <td>Green Brier Village Patiis Road Guinayan, San Mateo, Rizal Philippines</td>
+                            <td>Green Brier Village Patiis Road Guinayang, San Mateo, Rizal Philippines</td>
                         </tr>
                         <tr>
                             <td class="dtlbold">Email:</td>
@@ -83,6 +86,7 @@
                 </div>
             </div>
         </section>
+        <!-- PROJECT SECTION -->
         <section>
             <div class="bg-color" id="projects">
                 <div class="container reveal">
@@ -104,6 +108,7 @@
                 </div>  
             </div>
         </section>
+        <!-- CONTACT SECTION -->
         <section>
             <div class="contact">
                 <div class="cont-container" id="contact">
@@ -111,7 +116,7 @@
                         <div class="cont-inputs">
                             <div class="cont-desc">
                                 <h1> CONTACT</h1>
-                                <p>Wanna know more about me?</p>
+                                <p>Send me a Message!</p>
                             </div>
                             <div class="inputdetails">
                                 <p>Name</p>
@@ -149,21 +154,21 @@
         </script>
         <!-- REVEAL ON SCROLL -->
         <script>
-         document.addEventListener('DOMContentLoaded', function() {
-            var revealElements = document.querySelectorAll('.reveal');
-
-            function revealOnScroll() {
-                revealElements.forEach(function(element) {
-                var revealPosition = element.getBoundingClientRect().top;
-                var windowHeight = window.innerHeight;
-
-                    if (revealPosition < windowHeight / 1.5) {
-                        element.classList.add('revealed');
-                    }
-                });
-            }
-
-            window.addEventListener('scroll', revealOnScroll);
+            document.addEventListener('DOMContentLoaded', function() {
+                var revealElements = document.querySelectorAll('.reveal');
+    
+                function revealOnScroll() {
+                    revealElements.forEach(function(element) {
+                        var revealPosition = element.getBoundingClientRect().top;
+                        var windowHeight = window.innerHeight;
+    
+                        if (revealPosition < windowHeight / 1.6) {
+                            element.classList.add('revealed');
+                        }
+                    });
+                }
+    
+                window.addEventListener('scroll', revealOnScroll);
             });
         </script>
     </body>
