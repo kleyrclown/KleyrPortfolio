@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 * {
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
 }   
 
 /* Navbar */
@@ -73,7 +75,7 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
-    margin-top: 25vh;
+    margin-top: 20vh;
 }
 
 .intro {
@@ -124,7 +126,7 @@
     text-decoration: none;
     background-color: transparent;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 10px;
     position: relative;
     font-size: 15px;
@@ -274,7 +276,7 @@ section .contact{
     background: rgba(36, 36, 36,0.05);
     box-shadow: 2px 0px 4px rgba(36, 36, 36, 0.3);
     padding: 30px 30px;
-    height: 700px;  
+    height: 800px;  
     width: 100%;
 }
 
@@ -345,7 +347,7 @@ section .contact{
     margin: 10px;
     color: rgb(36, 36, 36);
     border: 2px solid rgb(36, 36, 36);
-    border-radius: 20px;
+    border-radius: 10px;
     right: 140px;
     padding: 10px;
     width: 100px;
@@ -435,7 +437,7 @@ section .contact{
     }
 
     #check:checked~.navbar {
-        height: 15rem;
+        height: 18rem;
     }
 
     .navbar a {
@@ -452,18 +454,16 @@ section .contact{
         transition-delay: calc(0.20s * var(--i));
     }
 
-    /* FRONT TEXTS */
-
-    /* .img {
-        border: 2px solid black;
-        border-radius: 300px;
-        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);;
-        width: 20rem;
-        margin-bottom: 10px;
-    } */
+    .navbar a::after {
+        display: none;
+    }
+    
+    .navbar a:hover::after {
+        display: none;
+    }
 
     .intro h1 {
-        font-size: 50px;
+        font-size: 40px;
         margin-top: 20px;
     }
 
@@ -479,7 +479,7 @@ section .contact{
 
     .introbtn {
         font-weight: normal;
-        border-radius: 20px;
+        border-radius: 5px;
         padding: 10px;
         width: 220px;
     }
@@ -616,7 +616,7 @@ section .contact{
         top: 100%;
         left: 0;
         width: 0;
-        height: 15rem;
+        height: 18rem;
         background: white;
         opacity: 0;
         overflow: hidden;
@@ -643,35 +643,27 @@ section .contact{
     }
 
     .navbar a::after {
-        content: "";
-        position: absolute;
-        background-color: rgb(40, 140, 200);
-        height: 3px;
-        width: 0%;
-        left: 0;
-        bottom: -5px;
-        transition: 0.3s;
+        display: none;
     }
     
     .navbar a:hover::after {
-        width: 100%;
+        display: none;
     }
 
     /* FRONT TEXTS */
 
     .intro {
         position: relative;
-        margin-top: 10px;
     }
 
     .intro h1 {
-        font-size: 25px;
+        font-size: 23px;
     }
 
     .introdesc {
         font-size: 20px;
         width: 350px;
-        margin-bottom: 130px;
+        margin-bottom: 50px;
         margin-top: 20px;
         display: flex;
         justify-content: center;
