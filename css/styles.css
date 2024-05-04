@@ -76,6 +76,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 20vh;
+    width: 100%;
 }
 
 .intro {
@@ -153,7 +154,6 @@
     margin: auto;
     position: relative;
     padding-bottom: 50px;
-    display: flex;
     justify-content: center;
     text-align: center;
 }
@@ -166,23 +166,16 @@
     justify-content: center;
     align-items: center;
     margin-top: 40vh;
+    padding: 50px;
+    width: 100%;
     height: 80vh;
 }
 
-/* .about::after {
-    content: "";
-    position: absolute;
-    background-color: rgb(36, 36, 36);
-    height: 3px;
-    width: 20%;
-    left: 18vh;
-    top: 42vh;
-    transition: 0.3s;
-} */
-
 .aboutcont {
+    position: relative;
+    margin-top: 50px;
+    user-select: none;
     display: flex;
-    width: auto;
 }
 
 .aboutdesc h1 {
@@ -193,7 +186,7 @@
 
 .aboutdesc p {
     font-size: 20px;
-    width: 600px;
+    width: 100%;
     line-height: 1.5;
 }
 
@@ -211,6 +204,7 @@
 
 .techstack {
     margin-top: 35vh;
+    width: 100%;
     display: flex;
     position: relative;
     justify-content: center;
@@ -233,6 +227,7 @@ section .bg-color {
     margin-top: 400px;
     margin-bottom: 100px;
     background-color: white;
+    width: 100%;
     z-index: 1;
 }
 
@@ -270,7 +265,6 @@ section .cards .text-cards h1 {
 section .contact{
     display: flex;
     justify-content: center;
-    align-items: center;
     margin: auto;
     font-size: 20px;
     background: rgba(36, 36, 36,0.05);
@@ -390,7 +384,7 @@ section .contact{
   }
 
 /* SMALL SCREENS */
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
 
     /* NAVBAR */
     .header {
@@ -462,6 +456,8 @@ section .contact{
         display: none;
     }
 
+    /* INTRO */
+
     .intro h1 {
         font-size: 40px;
         margin-top: 20px;
@@ -511,10 +507,7 @@ section .contact{
     }
 
     .aboutcont {
-        position: relative;
         display: table-row;
-        align-items: center;
-        justify-content: center;
     }
 
     .aboutdesc h1 {
@@ -525,20 +518,14 @@ section .contact{
     
     .aboutdesc p {
         font-size: 20px;
-    }
-    
-    .aboutdesc p {
-        width: 600px;
+        width: 100%;
     }
 
     .aboutdetail {
         margin-left: 0px;
-        width: 500px;
         margin-top: 100px;
         text-align: left;
         display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     .aboutdetail td{
@@ -546,16 +533,10 @@ section .contact{
         padding: 5px 10px 10px;
     }
 
-    .aboutdetail td {
-        font-size: 20px;
-        padding: 5px;
-    }
-
-    
-
     /* MY WORKS */
     .container {
         padding: auto;
+        width: 100%;
     }
 
     .cards
@@ -580,11 +561,13 @@ section .contact{
 
 }
 
-@media (max-width: 480px) {
+
+@media screen and (max-width: 480px) {
 
     /* NAVBAR */
     .header {
         padding: 2vh;
+        width: 100%;
     }
 
     .name {
@@ -704,6 +687,7 @@ section .contact{
 
     .about {
         margin-top: 45vh;
+        width: 100%;
     }
 
     .aboutcont {
@@ -721,12 +705,13 @@ section .contact{
     }
     
     .aboutdesc p {
-        width: 300px;
+        width: 100%;
     }
 
     .aboutdetail {
         margin-left: 0px;
-        width: 300px;
+        justify-content: center;
+        width: auto;
     }
     
     .aboutdetail td{
@@ -738,6 +723,7 @@ section .contact{
     /* MY WORKS */
     .container {
         padding: auto;
+        width: 100%;
     }
 
     .cards
@@ -763,10 +749,7 @@ section .contact{
     /* CONTACT */
     .contact {
         margin: auto;
-    }
-
-    .cont-container {
-        margin: 300px;
+        width: 100%;
     }
 
     .input{
