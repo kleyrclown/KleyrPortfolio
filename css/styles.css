@@ -558,10 +558,6 @@ section .contact{
         flex-direction: column;
     }
 
-    .cardtitle {
-        font-size: 70px;
-    }
-
     section .cards .text-cards {
         background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8));
         color: white;
@@ -746,7 +742,7 @@ section .contact{
     }
 
     .cardtitle {
-        font-size: 35px;
+        font-size: 40px;
     }
 
     section .cards .text-cards {
