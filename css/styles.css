@@ -9,7 +9,6 @@
 
 /* Navbar */
 .header {
-    position: relative;
     top: 20px;
     left: 0;
     width: 100%;
@@ -371,17 +370,32 @@ section .contact{
     height: 40px;
 }
 
+/* NAVBAR STICK */
+.navbarstick {
+    position: relative;
+    transition: top 0.3s;
+}
+
+.navbarstick.navbarsticked {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0px 0px 2px rgba(36, 36, 36, 0.3);
+}
+
 /* SCRIPT REVEAL */
 .reveal {
     opacity: 0; /* Initially hide the element */
     transform: translateY(20px); /* Move the element down slightly */
     transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
-  }
+}
 
 .reveal.revealed {
     opacity: 1; /* Make the element visible */
     transform: translateY(0); /* Move the element back to its original position */
-  }
+}
 
 /* SMALL SCREENS */
 @media screen and (max-width: 992px) {
