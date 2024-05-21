@@ -37,7 +37,7 @@
                         <a href="https://github.com/kleyrclown" target="_blank" class="iconbtn"> <i class='bx bxl-github'></i> </a>
                     </div>
                     <div class="btnlinks">
-                        <a href="#contact" class="introbtn">EMAIL ME</a>
+                        <a href="#contact" class="introbtn">CONTACT ME</a>
                         <a href="css/files/CHAN KLEAR BAYLON RESUME.pdf" target="_blank" class="introbtn">DOWNLOAD CV</a>
                     </div>
                 </div>
@@ -49,6 +49,31 @@
                 <div class="aboutdesc">
                     <h1>ABOUT ME</h1>
                         <p>I am a newly passionate Front-End Developer, graduated as a Computer Science, seeking opportunities to contribute, and improve my skills to the evolving IT Industry.</p>
+                        <div class="techstackCont">
+                            <h2 class="reveal">TECH STACK</h2>
+                            <div class="skillsCont reveal">
+                                <div class="skillsCard">
+                                    <p>HTML</p>
+                                    <div class="skillBar1"></div>
+                                </div>
+                                <div class="skillsCard">
+                                    <p>CSS</p>
+                                    <div class="skillBar1"></div>
+                                </div>
+                                <div class="skillsCard">
+                                    <p>Javascript</p>
+                                    <div class="skillBar2"></div>
+                                </div>
+                                <!-- <div class="skillsCard">
+                                    <p>Tailwind CSS</p>
+                                    <div class="skillBar2"></div>
+                                </div>
+                                <div class="skillsCard">
+                                    <p>React</p>
+                                    <div class="skillBar2"></div>
+                                </div> -->
+                            </div>
+                        </div>
                 </div>
                 <div class="aboutdetail">
                     <table>
@@ -62,7 +87,7 @@
                         </tr>
                         <tr>
                             <td class="dtlbold">Address:</td>
-                            <td>Green Brier Village Patiis Road Guinayang, San Mateo, Rizal Philippines</td>
+                            <td> San Mateo, Rizal Philippines</td>
                         </tr>
                         <tr>
                             <td class="dtlbold">Email:</td>
@@ -82,15 +107,15 @@
                 <div class="container reveal">
                     <h1 class="cardtitle">MY WORKS</h1>
                     <div class="cards">
-                        <div class="text-cards">
+                        <div class="text-cards reveal">
                             <h1>SOON</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                         </div>
-                        <div class="text-cards">
+                        <div class="text-cards reveal">
                             <h1>SOON</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                         </div>
-                        <div class="text-cards">
+                        <div class="text-cards reveal">
                             <h1>SOON</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                         </div>
@@ -100,13 +125,22 @@
         </section>
         <!-- CONTACT SECTION -->
         <section>
-            <div class="contact">
-                <div class="cont-container" id="contact">
-                    <form class="contactfrm">
+            <div class="contact" id="contact">
+                    <h1> CONTACT</h1>
+                    <p>Send me a Message!</p>
+                    <div class="detailContainer">
+                        <div class="contactDetail">
+                            <i class='bx bx-envelope contactIcon'></i>
+                            <p>chanklearbaylon@gmail.com</p>
+                        </div>
+                        <div class="contactDetail">
+                            <i class='bx bxs-phone contactIcon'></i>
+                            <p>+6391-075-3158</p>
+                        </div>
+                    </div>
+                    <!-- <form class="contactfrm">
                         <div class="cont-inputs">
                             <div class="cont-desc">
-                                <h1> CONTACT</h1>
-                                <p>Send me a Message!</p>
                             </div>
                             <div class="inputdetails">
                                 <p>Name</p>
@@ -125,60 +159,15 @@
                             <textarea class="input-comment" rows="10" cols="50" placeholder="Your Message"></textarea>
                         </div>
                             <input type="button" class="submitbtn" value="SUBMIT">
-                    </form>
-                </div>
+                    </form> -->
             </div>
         </section>
-        <div class="low-desc">
-        </div>
+        <footer>
+            <div class="low-desc">
+            </div>
+        </footer>
         <!-- SCRIPT FOR TYPING TEXT ANIMATION -->
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-        <!-- TYPING TEXT ANIMATION -->
-        <script>
-            var typed = new Typed(".spanname", {
-                strings: ["Chan Klear Baylon", "Front-End Developer"],
-                typeSpeed: 100,
-                backSpeed: 100,
-                loop: true
-            })
-        </script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-            const navbar = document.querySelector('.header');
-            const navbarHeight = navbar.offsetHeight;
-
-            function navbarSticky() {
-                if (window.pageYOffset > navbarHeight) {
-                    navbar.classList.add('navbarsticked');
-                } else {
-                    navbar.classList.remove('navbarsticked');
-                }
-            }
-
-            window.addEventListener('scroll', navbarSticky);
-            navbarSticky();
-        });
-        </script>
-        <!-- REVEAL ON SCROLL -->
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const revealElements = document.querySelectorAll('.reveal');
-    
-                function revealOnScroll() {
-                    revealElements.forEach(function(element) {
-                        const revealPosition = element.getBoundingClientRect().top;
-                        const windowHeight = window.innerHeight;
-    
-                        if (revealPosition < windowHeight / 1.6) {
-                            element.classList.add('revealed');
-                        }   else {
-                            element.classList.remove('revealed');
-                        }
-                    });
-                }
-    
-                window.addEventListener('scroll', revealOnScroll);
-            });
-        </script>
+        <script src="script.js"></script>
     </body>
 </html>

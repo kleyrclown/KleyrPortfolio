@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }   
 
 /* Navbar */
@@ -88,14 +89,6 @@
     font-size: 70px;
 }
 
-/* .img {
-    border: 2px solid black;
-    border-radius: 300px;
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);;
-    width: 30rem;
-    margin-bottom: 50px;
-} */
-
 .allbtn {
     display: flex;
     justify-content: center;
@@ -171,47 +164,103 @@
 }
 
 .aboutcont {
-    position: relative;
-    margin-top: 50px;
-    user-select: none;
+    justify-content: center;
     display: flex;
 }
 
 .aboutdesc h1 {
+    color: rgb(40, 140, 200);
     font-size: 60px;
     margin-bottom: 20px;
     user-select: none;
 }
 
 .aboutdesc p {
+    text-align: left;
     font-size: 20px;
     width: 100%;
     line-height: 1.5;
 }
 
 .aboutdetail {
-    margin-left: 60px;
-    width: 500px;
+    margin-top: 2rem;
+    width: 100%;
 }
 
 .aboutdetail td{
     font-size: 20px;
+}
+
+.dtlbold {
+    font-weight: bold;
     padding: 5px 10px 10px;
+}
+
+/* TECH STACK */
+
+.techstackCont {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.techstackCont h2 {
+    color: rgb(40, 140, 200);
+    font-size: 35px;
+    user-select: none;
+}
+
+.skillsCont {
+    display: table-row;
+    position: relative;
+}
+
+.skillsCard {
+    padding: 10px;
+    margin: 10px;
+}
+
+.skillBar1 {
+    background-color: rgb(40, 140, 200);
+    height: 20px;
+    width: 200px;
+}
+
+.skillBar2 {
+    background-color: rgb(40, 140, 200);
+    height: 20px;
+    width: 50px;
+}
+
+.skillBar1::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(36, 36, 36, 0.15);
+    height: 20px;
+    width: 250px;
+}
+
+.skillBar2::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(36, 36, 36, 0.15);
+    height: 20px;
+    width: 250px;
 }
 
 
 /* MY WORKS */
 
-section .bg-color {
-    margin-top: 100px;
-    margin-bottom: 100px;
+.bg-color {
     background-color: white;
     width: 100%;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
     z-index: 1;
 }
 
 .cardtitle {
-    font-size: 40px;
+    color: rgb(40, 140, 200);
+    font-size: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,19 +268,20 @@ section .bg-color {
     user-select: none;
 }
 
-section .cards {
+.cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-section .cards .text-cards {
+.text-cards {
     background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8));
     box-shadow: 2px 2px 4px rgba(36, 36, 36, 0.3);
     color: white;
     margin: 10px;
     padding: 10px;
     width: 350px;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 section .cards .text-cards h1 {
@@ -242,41 +292,60 @@ section .cards .text-cards h1 {
 
 /* Contact */
 section .contact{
-    display: flex;
-    justify-content: center;
-    margin: auto;
     font-size: 20px;
     background: rgba(36, 36, 36,0.05);
     box-shadow: 2px 0px 4px rgba(36, 36, 36, 0.3);
     padding: 30px 30px;
-    height: 800px;  
+    height: 400px;  
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.contact h1 {
+    color: rgb(40, 140, 200);
+    font-size: 60px;
+}
+
+.detailContainer {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    margin-top: 4rem;
+    gap: 2rem;
     width: 100%;
 }
 
-.contactfrm {
-    margin-bottom: 50px;
+.contactDetail {
+    display: flex;
+    align-items: center;
+  }
+
+.contactIcon {
+    font-size: 40px;
+    margin-right: 5px;
 }
 
-.cont-desc {
+/* .contactfrm {
+    margin-bottom: 50px;
+} */
+
+/* .cont-desc {
     text-align: center;
     margin-bottom: 20px;
     user-select: none;
-}
+} */
 
-.cont-desc h1{
+/* .cont-desc h1{
     color: rgb(40, 140, 200);
     font-size: 40px;
     margin-bottom: 20px;
-}
+} */
 
-.cont-container {
-    position: relative;
-    display: inherit;
-    justify-content: center;
-    display: flex;
-}
-
-.cont-inputs {
+/* .cont-inputs {
     flex-direction: column;
     display: flex;
 }
@@ -334,7 +403,7 @@ section .contact{
     border: 2px solid rgb(40, 140, 200);
     color: rgb(240, 240, 240);
     cursor: pointer;
-}
+} */
 
 /* Lower Description */
 .low-desc {
@@ -350,10 +419,10 @@ section .contact{
     height: 40px;
 }
 
-/* NAVBAR STICK */
+/* NAVBAR FIXED WHEN SCROLL */
 .navbarstick {
     position: relative;
-    transition: top 0.3s;
+
 }
 
 .navbarstick.navbarsticked {
@@ -362,6 +431,7 @@ section .contact{
     width: 100%;
     z-index: 1000;
     background-color: white;
+
     box-shadow: 0px 0px 2px rgba(36, 36, 36, 0.3);
 }
 
@@ -380,7 +450,7 @@ section .contact{
 /* SMALL SCREENS */
 @media screen and (max-width: 992px) {
 
-    /* NAVBAR */
+/* NAVBAR */
     .header {
         padding: 2vh;
     }
@@ -450,7 +520,7 @@ section .contact{
         display: none;
     }
 
-    /* INTRO */
+/* INTRO */
 
     .intro h1 {
         font-size: 40px;
@@ -490,9 +560,10 @@ section .contact{
         font-size: 25px;
     }
 
-    /* ABOUT */
+/* ABOUT */
     .about {
         margin-top: 45vh;
+        margin-bottom: 30vh;
         width: 100%;
     }
     
@@ -527,7 +598,13 @@ section .contact{
         padding: 5px 10px 10px;
     }
 
-    /* MY WORKS */
+/* TECH STACK */
+
+    .techstackCont h2 {
+        font-size: 30px;
+    }
+
+/* MY WORKS */
     .container {
         padding: auto;
         width: 100%;
@@ -535,20 +612,29 @@ section .contact{
 
     .cards
     {
-        flex-direction: column;
+        display: flex;
     }
 
-    section .cards .text-cards {
-        background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8));
-        color: white;
-        margin: 10px;
-        padding: 10px;
-        width: 300px;
-        justify-content: center;
-        align-self: center;
-        border-radius: 20px;
+    .cardtitle {
+        font-size: 40px;
     }
 
+/* CONTACT */
+
+.detailContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact h1 {
+    font-size: 40px;
+}
+
+    /* NAVBAR REVEAL ANIMATION */
+    .navbarstick.navbarsticked {
+        transition: top 0.2s;
+    }
 }
 
 
@@ -692,16 +778,11 @@ section .contact{
     
     .aboutdesc p {
         font-size: 18px;
-    }
-    
-    .aboutdesc p {
         width: 100%;
     }
-
+    
     .aboutdetail {
-        margin-left: 0px;
         justify-content: center;
-        width: auto;
     }
     
     .aboutdetail td{
@@ -709,31 +790,44 @@ section .contact{
         padding: 5px 10px 10px;
     }
 
+    /* TECH STACK */
+
+    .techstackCont {
+        margin-top: 100px;
+        text-align: left;
+        position: relative;
+    }
+
+    .skillsCont {
+        position: relative;
+        margin-right: 50px;
+    }
+
+    .skillCard {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .techstackCont h2 {
+        text-align: center;
+        font-size: 30px;
+    }
 
     /* MY WORKS */
     .container {
+        margin-top: 400px;
         padding: auto;
         width: 100%;
     }
 
     .cards
     {
-        flex-direction: column;
+        display: flex;
     }
 
     .cardtitle {
         font-size: 40px;
-    }
-
-    section .cards .text-cards {
-        background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8));
-        color: white;
-        margin: 10px;
-        padding: 10px;
-        width: 300px;
-        justify-content: center;
-        align-self: center;
-        border-radius: 20px;
     }
 
     /* CONTACT */
@@ -742,7 +836,11 @@ section .contact{
         width: 100%;
     }
 
-    .input{
+    .contact h1 {
+        font-size: 40px;
+    }
+
+    /* .input{
         font-family: 'Times New Roman', Times, serif;
         width: 280px;
         height: 50px;
@@ -771,5 +869,5 @@ section .contact{
         padding: 5px;
         width: 100px;
         font-size: 18px;
-    }
+    } */
 }
