@@ -411,8 +411,7 @@ body {
     font-weight: bold;
 }
 
-.cardSkillContainer {
-    /* border: 2px solid red; */
+.cardSkillContainer {   
     justify-content: center;
     display: flex;
 }
