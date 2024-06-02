@@ -34,9 +34,9 @@
                 const revealPosition = element.getBoundingClientRect().top;
                 const windowHeight = window.innerHeight;
     
-                if (revealPosition < windowHeight / 1.6) {
+                if (revealPosition < windowHeight / 1.3) {
                     element.classList.add('revealed');
-                }
+                } 
             });
         }
     

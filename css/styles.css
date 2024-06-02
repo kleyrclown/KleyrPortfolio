@@ -8,6 +8,11 @@
     scroll-behavior: smooth;
 }   
 
+body {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
 /* Navbar */
 .header {
     top: 20px;
@@ -67,15 +72,34 @@
     display: none;
 }
 
+/* NAVBAR FIXED WHEN SCROLL */
+.navbarstick {
+    position: relative;
+
+}
+
+.navbarstick.navbarsticked {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(36, 36, 36, 0.5);
+    transition: 0.3s ease;
+}
+
 /* Intro */
 
 .introcont {
+    position: relative;
     text-align: center;
     align-items: center;
     justify-content: center;
     display: flex;
+    width: 100%;
     flex-direction: column;
     margin-top: 20vh;
+    margin-bottom: 25rem;
     width: 100%;
 }
 
@@ -130,7 +154,7 @@
 
 
 .introbtn:hover {
-    box-shadow: inset 220px 0 rgb(40, 140, 200);
+    box-shadow: inset 300px 0 rgb(40, 140, 200);
     border: 2px solid rgb(40, 140, 200);
     color: rgb(240, 240, 240);
     cursor: pointer;
@@ -153,20 +177,19 @@
 /* ABOUT */
 
 .about {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40vh;
     padding: 50px;
     width: 100%;
-    height: 80vh;
+    height: 100rem;
 }
 
 .aboutcont {
     justify-content: center;
-    display: flex;
+    align-items: center;
 }
+
 
 .aboutdesc h1 {
     color: rgb(40, 140, 200);
@@ -178,7 +201,7 @@
 .aboutdesc p {
     text-align: left;
     font-size: 20px;
-    width: 100%;
+    width: 65%;
     line-height: 1.5;
 }
 
@@ -194,6 +217,46 @@
 .dtlbold {
     font-weight: bold;
     padding: 5px 10px 10px;
+}
+
+/* THE GOALS */
+.myGoals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    gap: 4rem;
+}
+
+.goalContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.goalCards {
+    background: rgb(40, 140, 200);
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.goalIcons {
+    font-size: 6rem;
+    color: white;
+}
+
+.goalContainer p {
+    width: 25rem;
+    font-size: 20px;
+    text-align: center;
 }
 
 /* TECH STACK */
@@ -214,9 +277,42 @@
     position: relative;
 }
 
+.skillsCont h3{
+    user-select: none;
+}
+
+.skillsIcon {
+    font-size: 50px;
+}
+
+.techName {
+    display: flex;
+}
+
+.techName h3 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.otherTechName {
+    display: flex;
+}
+
+.otherTechName h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
 .skillsCard {
     padding: 10px;
     margin: 10px;
+}
+
+.skillsOtherCard {
+    display: flex;
 }
 
 .skillBar1 {
@@ -250,10 +346,9 @@
 
 /* MY WORKS */
 
-.bg-color {
+.myWorkContainer {
     background-color: white;
     width: 100%;
-    margin-top: 10rem;
     margin-bottom: 10rem;
     z-index: 1;
 }
@@ -275,20 +370,88 @@
 }
 
 .text-cards {
-    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8));
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
     box-shadow: 2px 2px 4px rgba(36, 36, 36, 0.3);
     color: white;
     margin: 10px;
     padding: 10px;
     width: 350px;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 
-section .cards .text-cards h1 {
+.text-cards:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
+
+.text-cards .cardTitle {
+    color: rgb(240, 240, 240);
     font-size: 35px;
     text-align: center;
     margin-bottom: 20px;
+    transition: 0.3s ease;
+    user-select: none;
 }
+
+.text-cards:hover .cardTitle{
+    color: rgb(40, 140, 200);
+}
+
+.cardDescription {
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    margin: 10px 0px;
+    gap: 0.2rem;
+    text-align: center;
+}
+
+.cardDescription p {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.cardSkillContainer {
+    /* border: 2px solid red; */
+    justify-content: center;
+    display: flex;
+}
+
+.cardDescription .cardSkillIcon {
+    font-size: 40px;
+}
+
+.imgContainer {
+    overflow: hidden;
+}
+
+.text-cards .cardsImg {
+    width: 100%;
+    height: 100%;
+}
+
+.ApexImg:hover {
+    color: rgb(40, 140, 200);
+}
+
+.cardsBtnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cardsBtn {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    transition: 0.3s ease;
+}
+
+.cardsBtn:hover  {
+    color: rgb(40, 140, 200);
+}
+
 
 /* Contact */
 section .contact{
@@ -296,7 +459,6 @@ section .contact{
     background: rgba(36, 36, 36,0.05);
     box-shadow: 2px 0px 4px rgba(36, 36, 36, 0.3);
     padding: 30px 30px;
-    height: 400px;  
     width: 100%;
     text-align: center;
     justify-content: center;
@@ -305,18 +467,30 @@ section .contact{
 .contact h1 {
     color: rgb(40, 140, 200);
     font-size: 60px;
+    user-select: none;
 }
 
 .detailContainer {
     align-items: center;
     text-align: center;
-    justify-content: center;
+    justify-content: space-evenly;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     padding: 2rem;
     margin-top: 4rem;
-    gap: 2rem;
+    gap: 5rem;
     width: 100%;
+}
+
+.contactContainer h2 {
+    color: rgb(40, 140, 200);
+    user-select: none;
+}
+
+.contactBody {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .contactDetail {
@@ -327,6 +501,23 @@ section .contact{
 .contactIcon {
     font-size: 40px;
     margin-right: 5px;
+}
+
+.socialIcon {
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    margin-right: 5px;
+    transition: 0.4s ease;
+}
+
+.socialIcon:hover {
+    color: rgb(40, 140, 200);
+}
+
+.socialContainer {
+    display: flex;
+    gap: 1rem;
 }
 
 /* .contactfrm {
@@ -407,7 +598,6 @@ section .contact{
 
 /* Lower Description */
 .low-desc {
-    position: absolute;
     background-color: rgba(40, 140, 200, 0.8);
     box-shadow: 2px 0px 4px rgba(36, 36, 36, 0.3);
     align-items: center;
@@ -419,27 +609,15 @@ section .contact{
     height: 40px;
 }
 
-/* NAVBAR FIXED WHEN SCROLL */
-.navbarstick {
-    position: relative;
-
-}
-
-.navbarstick.navbarsticked {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    background-color: white;
-
-    box-shadow: 0px 0px 2px rgba(36, 36, 36, 0.3);
+.low-desc p {
+    color: rgb(240, 240, 240);
 }
 
 /* SCRIPT REVEAL */
 .reveal {
     opacity: 0; /* Initially hide the element */
     transform: translateY(20px); /* Move the element down slightly */
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+    transition: opacity 0.5s ease, transform 0.5s ease-out; /* Smooth transition */
 }
 
 .reveal.revealed {
@@ -467,6 +645,7 @@ section .contact{
 
     .icons {
         display: inline-flex;
+        margin-right: 15px;
     }
 
     #check:checked~.icons #menu-icon {
@@ -503,7 +682,7 @@ section .contact{
         display: block;
         text-align: center;
         margin: 1.3rem;
-        transform: translateY(-300px);
+        transform: translateY(-500px);
     }
 
     #check:checked~.navbar a {
@@ -521,6 +700,10 @@ section .contact{
     }
 
 /* INTRO */
+
+    .introcont {
+        position: relative;
+    }
 
     .intro h1 {
         font-size: 40px;
@@ -562,17 +745,11 @@ section .contact{
 
 /* ABOUT */
     .about {
-        margin-top: 45vh;
-        margin-bottom: 30vh;
         width: 100%;
     }
     
     .about::after {
         display: none;
-    }
-
-    .aboutcont {
-        display: table-row;
     }
 
     .aboutdesc h1 {
@@ -598,6 +775,23 @@ section .contact{
         padding: 5px 10px 10px;
     }
 
+/* THE GOALS */
+    .myGoals {
+        margin: 5rem 0rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    
+    .goalCards {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    .goalIcons {
+        font-size: 5rem;
+    }
+
 /* TECH STACK */
 
     .techstackCont h2 {
@@ -606,6 +800,8 @@ section .contact{
 
 /* MY WORKS */
     .container {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
         padding: auto;
         width: 100%;
     }
@@ -624,6 +820,7 @@ section .contact{
 .detailContainer {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -675,7 +872,7 @@ section .contact{
         top: 100%;
         left: 0;
         width: 0;
-        height: 18rem;
+        height: 60rem;
         background: white;
         opacity: 0;
         overflow: hidden;
@@ -684,6 +881,7 @@ section .contact{
 
     #check:checked~.navbar {
         width: 100%;
+        height: 60rem;
         opacity: 100%;
     }
 
@@ -692,7 +890,7 @@ section .contact{
         display: block;
         text-align: center;
         margin: 1.3rem;
-        transform: translateX(-300px);
+        transform: translateX(-350px);
     }
 
     #check:checked~.navbar a {
@@ -713,6 +911,10 @@ section .contact{
 
     .intro {
         position: relative;
+    }
+
+    .introcont {
+        margin-bottom: 30rem;
     }
 
     .intro h1 {
@@ -762,7 +964,6 @@ section .contact{
     /* ABOUT */
 
     .about {
-        margin-top: 45vh;
         width: 100%;
     }
 
@@ -816,7 +1017,6 @@ section .contact{
 
     /* MY WORKS */
     .container {
-        margin-top: 400px;
         padding: auto;
         width: 100%;
     }
@@ -839,6 +1039,7 @@ section .contact{
     .contact h1 {
         font-size: 40px;
     }
+
 
     /* .input{
         font-family: 'Times New Roman', Times, serif;
