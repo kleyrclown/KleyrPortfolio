@@ -429,10 +429,6 @@ body {
     height: 100%;
 }
 
-.ApexImg:hover {
-    color: rgb(40, 140, 200);
-}
-
 .cardsBtnContainer {
     display: flex;
     justify-content: center;
