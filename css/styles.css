@@ -471,13 +471,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
 }
 
 .cardsIconBtn {
-    color: white;
-    font-size: 40px;
-    transition: 0.3s ease;
+    font-size: 25px;
 }
 
 .cardsBtn {
@@ -488,6 +485,7 @@ body {
     border-radius: 5px;
     width: 7em;
     height: 2em;
+    gap: 0.3em;
     text-decoration: none;
     color: white;
     font-size: 20px;
