@@ -158,6 +158,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 3em;
 }
 
 .iconlinks {
@@ -174,9 +175,6 @@ body {
     color: rgb(40, 140, 200);
 }
 
-.btnlinks {
-    margin-left: 50px;
-}
 
 .introbtn {
     border: 2px solid rgb(36, 36, 36);
@@ -189,7 +187,6 @@ body {
     position: relative;
     font-size: 15px;
     font-weight: bold;
-    margin-right: 10px;
     transition: 0.5s ease;
 }
 
@@ -231,6 +228,9 @@ body {
     align-items: center;
 }
 
+.aboutIntro, .techstackCont {
+    margin: 0em 5em;
+}
 
 .aboutdesc h1 {
     color: rgb(40, 140, 200);
@@ -304,7 +304,6 @@ body {
 
 .techstackCont {
     margin-top: 50px;
-    width: 100%;
 }
 
 .techstackCont h2 {
@@ -368,15 +367,13 @@ body {
     width: 100px;
 }
 
-.skillBar1::after {
-    content: "";
-    position: absolute;
-    background-color: rgba(36, 36, 36, 0.15);
+.skillBar3 {
+    background-color: rgb(40, 140, 200);
     height: 20px;
-    width: 250px;
+    width: 10px;
 }
 
-.skillBar2::after {
+.skillBar1::after, .skillBar2::after, .skillBar3::after {
     content: "";
     position: absolute;
     background-color: rgba(36, 36, 36, 0.15);
@@ -477,15 +474,29 @@ body {
     gap: 1rem;
 }
 
-.cardsBtn {
-    text-decoration: none;
+.cardsIconBtn {
     color: white;
     font-size: 40px;
     transition: 0.3s ease;
 }
 
-.cardsBtn:hover  {
+.cardsBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 7em;
+    height: 2em;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.cardsBtn:hover{
     color: rgb(40, 140, 200);
+    background: rgb(240, 240, 240);
 }
 
 
@@ -760,7 +771,7 @@ section .contact{
         grid-row: 1;
     }
 
-    .introduction {
+    .introduction { 
         grid-column: 1 / 3;
         grid-row: 2;
     }
@@ -785,7 +796,7 @@ section .contact{
     }
 
     .introbtn {
-        font-weight: normal;
+
         border-radius: 5px;
         padding: 10px;
         width: 220px;
@@ -804,7 +815,7 @@ section .contact{
     }
 
     .btnlinks a{
-        font-size: 25px;
+        font-size: 15px;
     }
 
 /* ABOUT */
@@ -812,6 +823,10 @@ section .contact{
         width: 100%;
     }
     
+    .aboutIntro, .techstackCont {
+        margin: 0em;
+    }
+
     .about::after {
         display: none;
     }
@@ -962,10 +977,6 @@ section .contact{
     .iconlinks {
         font-size: 50px;
         margin-bottom: 20px;
-    }
-
-    .btnlinks {
-        margin-left: 20px;
     }
 
     /* ABOUT */
