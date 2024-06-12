@@ -42,3 +42,20 @@
     
         window.addEventListener('scroll', revealOnScroll);
 });
+
+    // SMALL SCREEN OVERLAY REMOVED WHEN OVER 992 Pixels
+
+document.addEventListener('DOMContentLoaded', () => {
+    const sideNavbar = document.querySelector('.overlay');
+    const screenWidth = screen.availWidth;
+
+    function sideNavbarReveal() {
+        if (screen.availWidth < 992) {
+            sideNavbar.classList.add('overlay');
+        } else {
+            sideNavbar.classList.remove('overlay');
+        }
+    }
+
+    window.addEventListener('resize', sideNavbarReveal);
+});
