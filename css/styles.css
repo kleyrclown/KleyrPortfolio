@@ -85,7 +85,7 @@ body {
     z-index: 1000;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(36, 36, 36, 0.5);
-    transition: 0.3s ease;
+    transition: top 0.3s;
 }
 
 /* NAVBAR BACKGROUND OVERLAY */
@@ -658,16 +658,17 @@ section .contact{
     color: rgb(240, 240, 240);
 }
 
-/* SCRIPT REVEAL */
+/* REVEAL CONTENTS WHEN SCROLL */
 .reveal {
-    opacity: 0; /* Initially hide the element */
-    transform: translateY(20px); /* Move the element down slightly */
-    transition: opacity 0.5s ease, transform 0.5s ease-out; /* Smooth transition */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease;
 }
 
 .reveal.revealed {
-    opacity: 1; /* Make the element visible */
-    transform: translateY(0); /* Move the element back to its original position */
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.5s ease-out;
 }
 
 /* SMALL SCREENS */

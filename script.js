@@ -7,11 +7,30 @@
     loop: true
 });
 
+// DEBOUNCE SCROLL EVENTS
+
+function debounce(func, wait = 20, immediate = true) {
+    let timeout;
+    return function() {
+        let context = this, args = arguments;
+        let later = function() {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+        };
+        let callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+    };
+}
+
     // NAVBAR FIXED WHEN SCROLL
 
     document.addEventListener('DOMContentLoaded', () => {
         const navbar = document.querySelector('.header');
         const navbarHeight = navbar.offsetHeight;
+        const navbarOverlay = document.querySelector('.overlay');
+        const revealElements = document.querySelectorAll('.reveal');
 
         function navbarSticky() {
             if (window.pageYOffset > navbarHeight) {
@@ -21,14 +40,8 @@
                 }
             }
 
-        window.addEventListener('scroll', navbarSticky);
-});
-
     // REVEAL ON SCROLL
         
-    document.addEventListener('DOMContentLoaded', () => {
-        const revealElements = document.querySelectorAll('.reveal');
-    
         function revealOnScroll() {
             revealElements.forEach(function(element) {
                 const revealPosition = element.getBoundingClientRect().top;
@@ -39,23 +52,19 @@
                 } 
             });
         }
-    
-        window.addEventListener('scroll', revealOnScroll);
-});
 
     // SMALL SCREEN OVERLAY REMOVED WHEN OVER 992 Pixels
 
-document.addEventListener('DOMContentLoaded', () => {
-    const sideNavbar = document.querySelector('.overlay');
-    const screenWidth = screen.availWidth;
-
     function sideNavbarReveal() {
         if (screen.availWidth < 992) {
-            sideNavbar.classList.add('overlay');
+            navbarOverlay.classList.add('overlay');
         } else {
-            sideNavbar.classList.remove('overlay');
+            navbarOverlay.classList.remove('overlay');
         }
     }
 
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('scroll', navbarSticky);
     window.addEventListener('resize', sideNavbarReveal);
+
 });
