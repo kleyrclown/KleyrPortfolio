@@ -270,6 +270,8 @@ body {
     gap: 4rem;
 }
 
+overlay
+
 .goalContainer {
     display: flex;
     flex-direction: column;
