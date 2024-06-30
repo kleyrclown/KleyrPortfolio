@@ -130,6 +130,7 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
+    width: auto;
     flex-direction: column;
 }   
 
@@ -676,7 +677,7 @@ section .contact{
 
 /* NAVBAR */
     .header {
-        padding: 2vh;;
+        padding: 2vh;
     }
 
     .name {
@@ -756,7 +757,7 @@ section .contact{
     .introcont {
         position: relative;
         flex-wrap: wrap;
-        margin-top: 5vh;
+        margin-top: 8em;
         gap: 5rem;
     } 
 
@@ -934,7 +935,7 @@ section .contact{
     }
 
     .introcont {
-        margin-top: 2vh;
+        margin-top: 8em;
         margin-bottom: 10rem;
         gap: 12rem;
     }
