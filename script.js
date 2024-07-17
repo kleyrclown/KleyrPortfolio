@@ -27,10 +27,10 @@ function debounce(func, wait = 20, immediate = true) {
     // NAVBAR FIXED WHEN SCROLL
 
     document.addEventListener('DOMContentLoaded', () => {
-        const navbar = document.querySelector('.header');
-        const navbarHeight = navbar.offsetHeight;
-        const navbarOverlay = document.querySelector('.overlay');
-        const revealElements = document.querySelectorAll('.reveal');
+        const navbar = document.querySelector('.header'); // NAVBAR STICKY
+        const navbarHeight = navbar.offsetHeight; // NAVBAR STICKY
+        const navbarOverlay = document.querySelector('.overlay'); // NAVBAR BACKGROUND OVERLAY
+        const revealElements = document.querySelectorAll('.reveal'); // REVEAL ON SCROLL
 
         function navbarSticky() {
             if (window.pageYOffset > navbarHeight) {
