@@ -392,6 +392,9 @@ body {
 /* MY WORKS */
 
 .myWorkContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background-color: white;
     width: 100%;
     margin-bottom: 10rem;
@@ -532,6 +535,51 @@ body {
 .cardsBtn img {
     width: 35px;
 }
+
+/* FOR OTHER WORKS */
+/* .otherWorksContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cardsHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.design-cards {
+    object-fit: fill;
+    box-shadow: 2px 2px 4px rgba(36, 36, 36, 0.3);
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    height: 600px;
+    width: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#designCard1 {
+    background-image: url('/css/PICS/1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#designCard2 {
+    background-image: url('/css/PICS/2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#designCard3 {
+    background-image: url('/css/PICS/3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
 
 /* Contact */
 section .contact{
