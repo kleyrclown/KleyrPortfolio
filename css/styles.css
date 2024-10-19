@@ -569,19 +569,19 @@ body {
 }
 
 #designCard1 {
-    background-image: url('/css/PICS/1.png');
+    background-image: url('css/PICS/1.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #designCard2 {
-    background-image: url('/css/PICS/2.png');
+    background-image: url('css/PICS/2.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #designCard3 {
-    background-image: url('/css/PICS/3.png');
+    background-image: url('css/PICS/3.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
