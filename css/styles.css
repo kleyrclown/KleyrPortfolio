@@ -446,7 +446,7 @@ body {
 }
 
 .toHoverButton {
-    transform: translateY(60px);
+    transform: translateY(65px);
     transition: 0.5s ease;
 }
 
@@ -479,7 +479,12 @@ body {
 
 .cardSkillContainer {
     justify-content: center;
+    align-items: center;
     display: flex;
+}
+
+.cardSkillContainer img{
+    width: 50px;
 }
 
 .cardDescription .cardSkillIcon {
