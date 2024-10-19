@@ -542,7 +542,7 @@ body {
 }
 
 /* FOR OTHER WORKS */
-/* .otherWorksContainer {
+.otherWorksContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -584,7 +584,7 @@ body {
     background-image: url('/css/PICS/3.png');
     background-size: cover;
     background-repeat: no-repeat;
-} */
+}
 
 /* Contact */
 section .contact{
