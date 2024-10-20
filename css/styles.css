@@ -401,6 +401,12 @@ body {
     z-index: 1;
 }
 
+.myWorkContainer .container {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
 .cardtitle {
     color: rgb(40, 140, 200);
     font-size: 60px;
