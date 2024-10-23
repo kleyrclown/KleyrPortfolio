@@ -422,7 +422,7 @@ body {
 }
 
 .text-cards {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
     box-shadow: 2px 2px 4px rgba(36, 36, 36, 0.3);
     color: white;
     margin: 10px;
@@ -446,7 +446,7 @@ body {
 }
 
 .text-cards:hover .cardTitle{
-    color: rgb(40, 140, 200);
+    color: rgb(50, 160, 230);
 }
 
 .toHoverButton {
@@ -606,6 +606,7 @@ body {
     font-size: 60px;
     color: rgb(40, 140, 200);
     margin: 0 0 20px;
+    user-select: none;
 }
 
 .theCertificates {
