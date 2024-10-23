@@ -11,6 +11,7 @@
 body {
     display: grid;
     grid-template-rows: auto auto;
+    overflow-x: hidden;
 }
 
 /* Navbar */
@@ -128,6 +129,7 @@ body {
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .introduction {
@@ -136,12 +138,14 @@ body {
     justify-content: center;
     display: flex;
     width: auto;
+    max-width: 900px;
     flex-direction: column;
 }   
 
 .intro {
     position: relative;
     margin-top: 50px;
+    max-width: 620px;
     user-select: none;
 }
 
@@ -152,7 +156,9 @@ body {
 }
 
 .introImg {
-    width: 30rem;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     object-fit: contain;
 }
 
@@ -210,7 +216,7 @@ body {
 
 .introdesc {
     font-size: 25px;
-    width: 50rem;
+    width: 100%;
     margin: auto;
     position: relative;
     padding-bottom: 50px;
@@ -501,7 +507,7 @@ body {
 
 .text-cards .cardsImg {
     width: 100%;
-    height: 100%;
+    height: auto;
     filter: blur(2px);
 }
 
@@ -558,6 +564,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .design-cards {
@@ -567,7 +574,7 @@ body {
     margin: 10px;
     padding: 10px;
     height: 600px;
-    width: 300px;
+    max-width: 300px;   
     border-radius: 5px;
     overflow: hidden;
 }
@@ -576,18 +583,21 @@ body {
     background-image: url('../css/PICS/1.png');
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
 }
 
 #designCard2 {
     background-image: url('../css/PICS/2.png');
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
 }
 
 #designCard3 {
     background-image: url('../css/PICS/3.png');
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
 }
 
 /* MY CERTIFICATES */
@@ -1048,6 +1058,26 @@ section .contact{
     }
 }
 
+@media screen and (max-width: 768px) {
+    .introcont {
+        flex-wrap: wrap;
+        margin-top: 2em;
+        margin-bottom: 10rem;
+    }
+
+    .introdesc {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .introImg {
+        max-width: 100%;
+    }
+
+    .design-cards {
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 480px) {
 
