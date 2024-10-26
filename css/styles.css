@@ -12,6 +12,7 @@ body {
     display: grid;
     grid-template-rows: auto auto;
     overflow-x: hidden;
+    width: 100%;
 }
 
 /* Navbar */
@@ -564,7 +565,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 100%;
+    height: auto;
 }
 
 .design-cards {
@@ -572,11 +573,19 @@ body {
     box-shadow: 2px 2px 4px rgba(36, 36, 36, 0.3);
     color: white;
     margin: 10px;
-    padding: 10px;
-    height: 600px;
-    max-width: 300px;   
+    padding: 10px;  
     border-radius: 5px;
     overflow: hidden;
+}
+
+.portrait {
+    height: 600px;
+    max-width: 300px; 
+}
+
+.landscape {
+    height: 23vw;
+    width: 48vw;
 }
 
 #designCard1 {
@@ -598,6 +607,12 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+}
+
+#designCard4 {
+    background-image: url('../css/PICS/FoodWebBanner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* MY CERTIFICATES */
@@ -1034,6 +1049,11 @@ section .contact{
         font-size: 40px;
     }
 
+    .landscape {
+        height: 300px;
+        width: 620px;
+    }
+
 /* MY CERTIFICATES */
 .myCertificates h1 {
     font-size: 40px;
@@ -1077,6 +1097,12 @@ section .contact{
     .design-cards {
         width: 100%;
     }
+
+    .landscape {
+        height: 300px;
+        width: 620px;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
