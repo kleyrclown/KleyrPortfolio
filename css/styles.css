@@ -584,7 +584,7 @@ body {
 }
 
 .landscape {
-    height: 23vw;
+    height: 26vw;
     width: 48vw;
 }
 
@@ -613,6 +613,52 @@ body {
     background-image: url('../css/PICS/FoodWebBanner.png');
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+#designCard5 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(0px);
+}
+
+#designCard5::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../css/PICS/ShowTastyFoodWebsite.png');
+    background-size: cover;
+    background-position: center;
+    transition: filter 0.3s ease-in;
+    z-index: 0;
+}
+
+#designCard5:hover::before {
+    filter: blur(1px) brightness(40%);
+}
+
+.showDesignBtn {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: rgb(50, 160, 230);
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+}
+
+#designCard5:hover .showDesignBtn {
+    opacity: 1;
 }
 
 /* MY CERTIFICATES */
@@ -1050,7 +1096,7 @@ section .contact{
     }
 
     .landscape {
-        height: 300px;
+        height: 320px;
         width: 620px;
     }
 
@@ -1099,7 +1145,7 @@ section .contact{
     }
 
     .landscape {
-        height: 300px;
+        height: 320px;
         width: 620px;
     }
 
@@ -1254,6 +1300,16 @@ section .contact{
 
     .cardtitle {
         font-size: 40px;
+    }
+
+    .showDesignBtn {
+        bottom: 25%;
+        font-size: 40px;
+        color: rgb(50, 160, 230);
+        font-weight: bold;
+        background-color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
     }
 
     /* CONTACT */
