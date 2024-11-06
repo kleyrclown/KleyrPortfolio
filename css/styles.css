@@ -616,43 +616,31 @@ body {
     width: 100%;
 }
 
-#designCard4 {
-    background-image: url('../css/PICS/FoodWebBanner.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#designCard5 {
-    background-image: url('../css/PICS/CreamyCafeDark.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#designCardShow {
+#designCardShow1 {
     background-size: cover;
     background-repeat: no-repeat;
     filter: blur(0px);
 }
 
-#designCardShow::before {
+#designCardShow1::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../css/PICS/ShowTastyFoodWebsite.png');
+    background-image: url('../css/PICS/FoodWebBanner.png');
     background-size: cover;
     background-position: center;
     transition: filter 0.3s ease-in;
     z-index: 0;
 }
 
-#designCardShow:hover::before {
+#designCardShow1:hover::before {
     filter: blur(1px) brightness(40%);
 }
 
-.showDesignBtn {
+.showDesignBtn1 {
     position: absolute;
     bottom: 0%;
     left: 50%;
@@ -670,7 +658,97 @@ body {
     opacity: 0;
 }
 
-#designCardShow:hover .showDesignBtn {
+/* --------------------------------- */
+
+#designCardShow2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(0px);
+}
+
+#designCardShow2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../css/PICS/CreamyCafeDark.png');
+    background-size: cover;
+    background-position: center;
+    transition: filter 0.3s ease-in;
+    z-index: 0;
+}
+
+#designCardShow2:hover::before {
+    filter: blur(1px) brightness(40%);
+}
+
+.showDesignBtn2 {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: rgb(50, 160, 230);
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+}
+
+/* ---------------------------------- */
+
+#designCardShow3 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(0px);
+}
+
+#designCardShow3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../css/PICS/ShowTastyFoodWebsite.png');
+    background-size: cover;
+    background-position: center;
+    transition: filter 0.3s ease-in;
+    z-index: 0;
+}
+
+#designCardShow3:hover::before {
+    filter: blur(1px) brightness(40%);
+}
+
+.showDesignBtn3 {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: rgb(50, 160, 230);
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+}
+
+#designCardShow1:hover .showDesignBtn1,
+#designCardShow2:hover .showDesignBtn2,
+#designCardShow3:hover .showDesignBtn3 {
     opacity: 1;
 }
 
@@ -1111,7 +1189,7 @@ section .contact{
     .landscape {
         height: 320px;
         width: 620px;
-    }
+    }   
 
 /* MY CERTIFICATES */
 .myCertificates h1 {
@@ -1315,7 +1393,7 @@ section .contact{
         font-size: 40px;
     }
 
-    .showDesignBtn {
+    .showDesignBtn1, .showDesignBtn2, .showDesignBtn3 {
         bottom: 25%;
         font-size: 40px;
         color: rgb(50, 160, 230);
