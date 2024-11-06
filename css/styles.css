@@ -565,11 +565,18 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;
     height: auto;
 }
 
+.cardsHolderLandscape {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
 .design-cards {
-    object-fit: fill;
     box-shadow: 2px 2px 4px rgba(36, 36, 36, 0.3);
     color: white;
     margin: 10px;
@@ -616,12 +623,18 @@ body {
 }
 
 #designCard5 {
+    background-image: url('../css/PICS/CreamyCafeDark.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#designCardShow {
     background-size: cover;
     background-repeat: no-repeat;
     filter: blur(0px);
 }
 
-#designCard5::before {
+#designCardShow::before {
     content: '';
     position: absolute;
     top: 0;
@@ -635,7 +648,7 @@ body {
     z-index: 0;
 }
 
-#designCard5:hover::before {
+#designCardShow:hover::before {
     filter: blur(1px) brightness(40%);
 }
 
@@ -657,7 +670,7 @@ body {
     opacity: 0;
 }
 
-#designCard5:hover .showDesignBtn {
+#designCardShow:hover .showDesignBtn {
     opacity: 1;
 }
 
