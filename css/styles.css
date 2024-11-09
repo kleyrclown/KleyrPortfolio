@@ -619,8 +619,12 @@ body {
 /* LANDSCAPE CARD SHOWS */
 
 [id^="designCardShow"] {
-    filter: blur(0px);
-    transition: filter 0.3s ease-in;
+    filter: brightness(100%);
+    transition: 0.3s ease-in;
+}
+
+[id^="designCardShow"]:hover::before {
+    filter: brightness(60%);
 }
 
 [id^="designCardShow"]::before {
@@ -634,10 +638,6 @@ body {
     background-position: center;
     z-index: 0;
     transition: filter 0.3s ease-in;
-}
-
-[id^="designCardShow"]:hover::before {
-    filter: blur(1px) brightness(40%);
 }
 
 #designCardShow1::before { background-image: url('../css/PICS/FoodWebBanner.png'); }
