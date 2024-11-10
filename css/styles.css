@@ -623,48 +623,41 @@ body {
     transition: 0.3s ease-in;
 }
 
-[id^="designCardShow"]:hover::before {
-    filter: brightness(60%);
-}
-
-[id^="designCardShow"]::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+[id^="designCardShow"] {
     background-size: cover;
     background-position: center;
     z-index: 0;
     transition: filter 0.3s ease-in;
 }
 
-#designCardShow1::before { background-image: url('../css/PICS/FoodWebBanner.png'); }
-#designCardShow2::before { background-image: url('../css/PICS/CreamyCafeDark.png'); }
-#designCardShow3::before { background-image: url('../css/PICS/ShowTastyFoodWebsite.png'); }
+#designCardShow1 { background-image: url('../css/PICS/FoodWebBanner.png'); }
+#designCardShow2 { background-image: url('../css/PICS/CreamyCafeDark.png'); }
+#designCardShow3 { background-image: url('../css/PICS/ShowTastyFoodWebsite.png'); }
 
 .showDesignBtn {
     position: absolute;
     bottom: 0%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 200%);
     z-index: 1;
     color: rgb(50, 160, 230);
     font-size: 20px;
     font-weight: bold;
+    border: 2px solid rgb(50, 160, 230);
     background-color: white;
     padding: 10px 20px;
-    border-radius: 5px;
     text-align: center;
     text-decoration: none;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    transition: 0.4s ease-in;
 }
 
-/* Button hover effect */
 [id^="designCardShow"]:hover .showDesignBtn {
-    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+[id^="designCardShow"] .showDesignBtn:hover {
+    color: white;
+    background-color: rgb(50, 160, 230);
 }
 
 /* MY CERTIFICATES */
@@ -1316,6 +1309,10 @@ section .contact{
         background-color: white;
         padding: 10px 20px;
         border-radius: 5px;
+    }
+
+    [id^="designCardShow"]:hover .showDesignBtn {
+        transform: translate(-50%, -40%);
     }
 
     /* CONTACT */
