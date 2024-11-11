@@ -648,10 +648,12 @@ body {
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
+    opacity: 0;
     transition: 0.4s ease-in;
 }
 
 [id^="designCardShow"]:hover .showDesignBtn {
+    opacity: 1;
     transform: translate(-50%, -50%);
 }
 
@@ -680,15 +682,15 @@ body {
 }
 
 .theCertificates {
-    width: 600px;
+    width: auto;
     height: 400px;
 }
 
-#item1 {
+/* #item1 {
     background-image: url('../css/PICS/freecodecamp.png');
     background-size: cover;
     background-repeat: no-repeat;
-}
+} */
 
 /* Contact */
 section .contact{
