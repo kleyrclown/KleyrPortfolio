@@ -620,19 +620,31 @@ body {
 
 [id^="designCardShow"] {
     filter: brightness(100%);
-    transition: 0.3s ease-in;
-}
-
-[id^="designCardShow"] {
     background-size: cover;
     background-position: center;
     z-index: 0;
-    transition: filter 0.3s ease-in;
 }
 
-#designCardShow1 { background-image: url('../css/PICS/FoodWebBanner.png'); }
+#designCardShow1 { background-image: url('../css/PICS/FoodWebBanner.png');}
 #designCardShow2 { background-image: url('../css/PICS/CreamyCafeDark.png'); }
 #designCardShow3 { background-image: url('../css/PICS/ShowTastyFoodWebsite.png'); }
+
+#designCardShow1::before, #designCardShow2::before, #designCardShow3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6));
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    z-index: 0;
+}
+
+#designCardShow1:hover::before, #designCardShow2:hover::before, #designCardShow3:hover::before {
+    opacity: 1;
+}
 
 .showDesignBtn {
     position: absolute;
