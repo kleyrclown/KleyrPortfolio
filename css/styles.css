@@ -619,17 +619,18 @@ body {
 /* LANDSCAPE CARD SHOWS */
 
 [id^="designCardShow"] {
-    filter: brightness(100%);
+    position: relative;
     background-size: cover;
     background-position: center;
     z-index: 0;
 }
 
+
 #designCardShow1 { background-image: url('../css/PICS/FoodWebBanner.png');}
 #designCardShow2 { background-image: url('../css/PICS/CreamyCafeDark.png'); }
 #designCardShow3 { background-image: url('../css/PICS/ShowTastyFoodWebsite.png'); }
 
-#designCardShow1::before, #designCardShow2::before, #designCardShow3::before {
+[id^="designCardShow"]::before {
     content: '';
     position: absolute;
     top: 0;
@@ -639,10 +640,10 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6));
     opacity: 0;
     transition: opacity 0.3s ease-in;
-    z-index: 0;
+    z-index: 1;
 }
 
-#designCardShow1:hover::before, #designCardShow2:hover::before, #designCardShow3:hover::before {
+[id^="designCardShow"]:hover::before {
     opacity: 1;
 }
 
