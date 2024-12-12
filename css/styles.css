@@ -15,6 +15,17 @@ body {
     width: 100%;
 }
 
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoContainer p {
+    font-size: 18px;
+    text-align: center;
+}
+
 /* Navbar */
 .header {
     top: 20px;
@@ -236,8 +247,14 @@ body {
     margin-bottom: 100px;
 }
 
+.aboutcont {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .aboutIntro, .techstackCont {
-    margin: 0em 5em;
+    margin: 0em 10vw;
 }
 
 .aboutdesc h1 {
@@ -310,15 +327,26 @@ body {
 
 /* TECH STACK */
 
+.techstackCont {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+}
+
 .techstackCont h2 {
     color: rgb(40, 140, 200);
-    font-size: 35px;
+    font-size: 50px;
+    text-align: center;
     user-select: none;
 }
 
 .skillsCont {
-    display: table-row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     position: relative;
+    gap: 5vw;
 }
 
 .skillsCont h3{
@@ -326,21 +354,20 @@ body {
 }
 
 .skillsIcon {
-    font-size: 50px;
+    font-size: 80px;
 }
 
-.techName {
+.techName, .otherTechName {
     display: flex;
+    gap: 0.5em;
+    flex-direction: column;
+    align-items: center;
 }
 
 .techName h3 {
     display: flex;
     text-align: center;
     align-items: center;
-}
-
-.otherTechName {
-    display: flex;
 }
 
 .otherTechName h3 {
@@ -352,21 +379,26 @@ body {
 }
 
 .otherTechName img {
-    width: 50px;
+    width: 80px;
     margin-right: 5px;
 }
 
-.skillsCard {
+.skillsCard, .skillsOtherCard {
+    display: flex;
+    flex-wrap: wrap ;
+}
+
+/* .skillsCard {
     padding: 10px;
     margin: 10px;
-}
+} */
 
-.skillsOtherCard {
+/* .skillsOtherCard {
     display: flex;
     flex-wrap: wrap;
-}
+} */
 
-.skillBar1 {
+/* .skillBar1 {
     background-color: rgb(40, 140, 200);    
     height: 20px;
     width: 200px;
@@ -390,8 +422,7 @@ body {
     background-color: rgba(36, 36, 36, 0.15);
     height: 20px;
     width: 250px;
-}
-
+} */
 
 /* MY WORKS */
 
@@ -399,17 +430,16 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: white;
     width: 100%;
     height: auto;
     margin-bottom: 5rem;
     z-index: 1;
 }
 
-.myWorkContainer .container {
+.container {
     display: flex;
     flex-direction: column;
-    gap: 4em;
+    gap: 2em;
 }
 
 .cardtitle {
@@ -417,8 +447,7 @@ body {
     font-size: 60px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+    align-items: center;    
     user-select: none;
 }
 
@@ -681,6 +710,7 @@ body {
     height: auto;
     margin-bottom: 5em;
     display: flex;
+    gap: 2em;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
@@ -690,7 +720,6 @@ body {
 .myCertificates h1 {
     font-size: 60px;
     color: rgb(40, 140, 200);
-    margin: 0 0 20px;
     user-select: none;
 }
 
@@ -1029,6 +1058,7 @@ section .contact{
         margin-bottom: 0px;
     }
 
+
     .aboutIntro, .techstackCont {
         margin: 0em;
     }
@@ -1054,8 +1084,6 @@ section .contact{
     }
 
     .aboutdetail {
-        margin-left: 0px;
-        margin-top: 100px;
         text-align: left;
         display: flex;
     }
@@ -1067,7 +1095,6 @@ section .contact{
 
 /* THE GOALS */
     .myGoals {
-        margin: 5rem 0rem;
         display: flex;
         flex-wrap: wrap;
         gap: 2rem;
@@ -1085,7 +1112,15 @@ section .contact{
 /* TECH STACK */
 
     .techstackCont h2 {
-        font-size: 30px;
+        font-size: 40px;
+    }
+
+    .skillsIcon {
+        font-size: 60px;
+    }
+
+    .skillsCard img {
+        width: 60px;
     }
 
 /* MY WORKS */
@@ -1094,8 +1129,7 @@ section .contact{
     }
 
     .container {
-        margin-top: 10rem;
-        margin-bottom: 10rem;
+        margin-bottom: 5rem;
         padding: auto;
         width: 100%;
     }
@@ -1257,6 +1291,7 @@ section .contact{
         text-align: center;
     }
 
+
     .aboutdesc h1 {
         font-size: 40px;
         margin-bottom: 20px;
@@ -1268,10 +1303,6 @@ section .contact{
         width: 100%;
     }
     
-    .aboutdetail {
-        justify-content: center;
-    }
-    
     .aboutdetail td{
         font-size: 18px;
         padding: 5px 10px 10px;
@@ -1280,14 +1311,12 @@ section .contact{
     /* TECH STACK */
 
     .techstackCont {
-        margin-top: 100px;
         text-align: left;
         position: relative;
     }
 
     .skillsCont {
         position: relative;
-        margin-right: 50px;
     }
 
     .skillCard {
@@ -1298,7 +1327,7 @@ section .contact{
 
     .techstackCont h2 {
         text-align: center;
-        font-size: 30px;
+        font-size: 40px;
     }
 
     /* MY WORKS */
