@@ -145,6 +145,7 @@ body {
 }
 
 .introduction {
+    position: relative;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -285,46 +286,6 @@ body {
     padding: 5px 10px 10px;
 }
 
-/* THE GOALS */
-.myGoals {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    gap: 4rem;
-}
-
-.goalContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.goalCards {
-    background: rgb(40, 140, 200);
-    width: 10rem;
-    height: 10rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-}
-
-.goalIcons {
-    font-size: 6rem;
-    color: white;
-}
-
-.goalContainer p {
-    width: 25rem;
-    font-size: 20px;
-    text-align: center;
-}
-
 /* TECH STACK */
 
 .techstackCont {
@@ -423,6 +384,46 @@ body {
     height: 20px;
     width: 250px;
 } */
+
+/* THE GOALS */
+.myGoals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    gap: 4rem;
+}
+
+.goalContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.goalCards {
+    background: rgb(40, 140, 200);
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.goalIcons {
+    font-size: 6rem;
+    color: white;
+}
+
+.goalContainer p {
+    width: 25rem;
+    font-size: 20px;
+    text-align: center;
+}
 
 /* MY WORKS */
 
@@ -910,6 +911,10 @@ section .contact{
 /* SMALL SCREENS */
 @media screen and (max-width: 992px) { 
 
+    .infoContainer p {
+        width: 90%;
+    }
+
 /* NAVBAR */
     .header {
         padding: 2vh;
@@ -1065,6 +1070,7 @@ section .contact{
 
     .aboutcont {
         width: 90%;
+        gap: 4rem;
         text-align: center;
     }
 
@@ -1097,6 +1103,7 @@ section .contact{
     .myGoals {
         display: flex;
         flex-wrap: wrap;
+        margin-top: 0rem;
         gap: 2rem;
     }
     
@@ -1125,6 +1132,7 @@ section .contact{
 
 /* MY WORKS */
     .myWorkContainer {
+        margin-top: 5rem;
         margin-bottom: 0;
     }
 
