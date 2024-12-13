@@ -141,7 +141,7 @@ body {
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    /* gap: 4vw; */
 }
 
 .introduction {
@@ -150,15 +150,16 @@ body {
     align-items: center;
     justify-content: center;
     display: flex;
-    width: auto;
-    max-width: 900px;
+    width: 45rem;
+    /* width: auto;
+    max-width: 900px; */
     flex-direction: column;
 }   
 
 .intro {
     position: relative;
     margin-top: 50px;
-    max-width: 620px;
+    max-width: 680px;
     user-select: none;
 }
 
@@ -170,7 +171,7 @@ body {
 
 .introImg {
     width: 100%;
-    max-width: 500px;
+    max-width: 500px;   
     height: auto;
     object-fit: contain;
 }
@@ -1241,7 +1242,7 @@ section .contact{
     }
 
     .introcont {
-        margin-top: 2em;
+        margin-top: 15em;
         margin-bottom: 10rem;
         gap: 12rem;
     }
