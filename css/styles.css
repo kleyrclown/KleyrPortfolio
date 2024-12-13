@@ -1232,7 +1232,7 @@ section .contact{
     .name {
         color: rgb(40, 140, 200);
         user-select: none;
-        font-size: 35px;
+        font-size: 45px;
     }    
 
     /* FRONT TEXTS */

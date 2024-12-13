@@ -1,7 +1,7 @@
     // TYPING TEXT ANIMATION
 
     const typed = new Typed(".spanname", {
-    strings: ["a Front-End Developer"],
+    strings: ["Chan Klear C. Baylon","a Designer","a Front-End Developer"],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true
