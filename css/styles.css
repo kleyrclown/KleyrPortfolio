@@ -256,7 +256,10 @@ body {
 }
 
 .aboutIntro, .techstackCont {
+    display: flex;
+    flex-direction: column;
     margin: 0em 10vw;
+    gap: 2rem;
 }
 
 .aboutdesc h1 {
@@ -273,18 +276,13 @@ body {
     line-height: 1.5;
 }
 
-.aboutdetail {
-    margin-top: 2rem;
-    width: 100%;
-}
-
 .aboutdetail td{
     font-size: 20px;
 }
 
 .dtlbold {
     font-weight: bold;
-    padding: 5px 10px 10px;
+    padding: 5px 10px 5px;
 }
 
 /* TECH STACK */
@@ -449,6 +447,12 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2em;
+}
+
+.titleProjectSeparate {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .cardtitle {
