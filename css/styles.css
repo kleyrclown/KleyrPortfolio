@@ -353,6 +353,14 @@ body {
     border-radius: 20px;
     background-color: rgb(240, 240, 240);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    transform: translateY(20px);
+    transition: 0.5s ease;
+}
+
+.skillsCard:hover {
+    background-color: rgba(50, 160, 230, 0.9);
+    transform: translateY(10px);
+    transition: 0.3s ease-in;
 }
 
 /* .skillsCard {
@@ -439,8 +447,10 @@ body {
     flex-direction: column;
     width: 100%;
     height: auto;
+    background-color: rgb(240, 240, 240);
+    padding: 2em 0em;
     margin-bottom: 5rem;
-    z-index: 1;
+    z-index: 0;
 }
 
 .container {
@@ -1164,11 +1174,10 @@ section .contact{
 /* MY WORKS */
     .myWorkContainer {
         margin-top: 5rem;
-        margin-bottom: 0;
+        margin-bottom: 5em;
     }
 
     .container {
-        margin-bottom: 5rem;
         padding: auto;
         width: 100%;
     }
@@ -1374,8 +1383,12 @@ section .contact{
     }
 
     /* MY WORKS */
+
+    .myWorkContainer {
+        padding: 2em 0em;
+    }
+    
     .container {
-        padding: auto;
         width: 100%;
     }
 

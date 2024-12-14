@@ -24,7 +24,7 @@ function debounce(func, wait = 20, immediate = true) {
     };
 }
 
-    // NAVBAR FIXED WHEN SCROLL
+    // NAVBAR FIXED WHEN SCROLL || REVEAL ON SCROLL || OVERLAY
 
     document.addEventListener('DOMContentLoaded', () => {
         const navbar = document.querySelector('.header'); // NAVBAR STICKY
@@ -49,6 +49,7 @@ function debounce(func, wait = 20, immediate = true) {
     
                 if (revealPosition < windowHeight / 1.3) {
                     element.classList.add('revealed');
+                    
                 } 
             });
         }
