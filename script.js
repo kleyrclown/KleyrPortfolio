@@ -26,33 +26,33 @@ function debounce(func, wait = 20, immediate = true) {
 
     // NAVBAR FIXED WHEN SCROLL || REVEAL ON SCROLL || OVERLAY
 
-    document.addEventListener('DOMContentLoaded', () => {
-        const navbar = document.querySelector('.header'); // NAVBAR STICKY
-        const navbarHeight = navbar.offsetHeight; // NAVBAR STICKY
-        const navbarOverlay = document.querySelector('.overlay'); // NAVBAR BACKGROUND OVERLAY
-        const revealElements = document.querySelectorAll('.reveal'); // REVEAL ON SCROLL
+document.addEventListener('DOMContentLoaded', () => {
+    const navbar = document.querySelector('.header'); // NAVBAR STICKY
+    const navbarHeight = navbar.offsetHeight; // NAVBAR STICKY
+    const navbarOverlay = document.querySelector('.overlay'); // NAVBAR BACKGROUND OVERLAY
+    const revealElements = document.querySelectorAll('.reveal'); // REVEAL ON SCROLL
 
-        function navbarSticky() {
-            if (window.pageYOffset > navbarHeight) {
-                navbar.classList.add('navbarsticked');
-            } else {
-                navbar.classList.remove('navbarsticked');
-                }
+    function navbarSticky() {
+        if (window.pageYOffset > navbarHeight) {
+            navbar.classList.add('navbarsticked');
+        } else {
+            navbar.classList.remove('navbarsticked');
             }
+        }
 
     // REVEAL ON SCROLL
         
-        function revealOnScroll() {
-            revealElements.forEach(function(element) {
-                const revealPosition = element.getBoundingClientRect().top;
-                const windowHeight = window.innerHeight;
-    
-                if (revealPosition < windowHeight / 1.3) {
-                    element.classList.add('revealed');
-                    
-                } 
-            });
-        }
+    function revealOnScroll() {
+        revealElements.forEach(function(element) {
+            const revealPosition = element.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (revealPosition < windowHeight / 1.3) {
+                element.classList.add('revealed');
+                
+            } 
+        });
+    }
 
     // SMALL SCREEN OVERLAY REMOVED WHEN OVER 992 Pixels
 

@@ -585,7 +585,7 @@ body {
     justify-content: center;
     align-items: center;
     border: 2px solid white;
-    border-radius: 2px;
+    border-radius: 10px;
     padding: 0px 10px;
     height: 2em;
     gap: 0.3em;
@@ -718,6 +718,7 @@ body {
     font-size: 20px;
     font-weight: bold;
     border: 2px solid rgb(50, 160, 230);
+    border-radius: 10px;
     background-color: white;
     padding: 10px 20px;
     text-align: center;
