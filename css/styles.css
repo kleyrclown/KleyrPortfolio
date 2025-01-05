@@ -681,6 +681,10 @@ body {
 
 [id^="designCardShow"] {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
     background-size: cover;
     background-position: center;
     z-index: 0;
@@ -709,10 +713,9 @@ body {
 }
 
 .showDesignBtn {
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    transform: translate(-50%, 200%);
+    position: relative;
+    top: 5em;
+    transform: translate(0%, 200%);
     z-index: 1;
     color: rgb(50, 160, 230);
     font-size: 20px;
@@ -729,7 +732,7 @@ body {
 
 [id^="designCardShow"]:hover .showDesignBtn {
     opacity: 1;
-    transform: translate(-50%, -50%);
+    transform: translate(0%, 20%);
 }
 
 [id^="designCardShow"] .showDesignBtn:hover {
@@ -1403,17 +1406,17 @@ section .contact{
     }
 
     .showDesignBtn {
-        bottom: 25%;
-        font-size: 40px;
+        /* bottom: 25%; */
+        font-size: 30px;
         color: rgb(50, 160, 230);
         font-weight: bold;
         background-color: white;
-        padding: 10px 20px;
-        border-radius: 5px;
+        /* padding: 10px 20px;
+        border-radius: 5px; */
     }
 
     [id^="designCardShow"]:hover .showDesignBtn {
-        transform: translate(-50%, -40%);
+        transform: translate(0%, -200%);
     }
 
     /* CONTACT */
