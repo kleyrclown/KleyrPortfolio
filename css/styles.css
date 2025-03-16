@@ -695,6 +695,7 @@ body {
 #designCardShow2 { background-image: url('../css/PICS/CreamyCafeDark.png'); }
 #designCardShow3 { background-image: url('../css/PICS/ShowTastyFoodWebsite.png'); }
 #designCardShow4 { background-image: url('../css/PICS/SkillForge.png'); }
+#designCardShow5 { background-image: url('../css/PICS/Goalify.png'); }
 
 [id^="designCardShow"]::before {
     content: '';
