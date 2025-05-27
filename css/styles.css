@@ -696,6 +696,7 @@ body {
 #designCardShow3 { background-image: url('../css/PICS/ShowTastyFoodWebsite.png'); }
 #designCardShow4 { background-image: url('../css/PICS/SkillForge.png'); }
 #designCardShow5 { background-image: url('../css/PICS/Goalify.png'); }
+#designCardShow6 { background-image: url('../css/PICS/FruityCart.png'); }
 
 [id^="designCardShow"]::before {
     content: '';
